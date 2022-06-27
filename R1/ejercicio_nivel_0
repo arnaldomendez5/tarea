@@ -1,0 +1,15 @@
+mensaje = "Esta es mi primera variable! Hola mundo!";
+alert(mensaje);
+
+var variable1 = "hola";
+
+let variable2 = "cómo";
+						
+const variable3 = "estás?";
+						
+variable4 = "yo muy bien :)";
+
+alert(variable1);
+alert(variable2);
+alert(variable3);
+alert(variable4);
