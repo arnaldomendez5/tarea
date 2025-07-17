@@ -1,0 +1,156 @@
+/* === PALETA === */
+/* Fondo: #fcefe6 */
+/* Amarillo: #ffb703 */
+/* Marrón claro: #cb997e */
+/* Verde oliva: #a5a58d */
+/* Azul cielo: #8ecae6 */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fcefe6;
+  color: #333;
+}
+
+header {
+  background-color: #ffb703;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: #fffbea;
+}
+
+main {
+  padding: 20px;
+}
+
+/* === Carrusel === */
+.carrusel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fffaf0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carrusel img {
+  min-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button#prevBtn,
+button#nextBtn {
+  background-color: #cb997e;
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+#prevBtn { left: -10px; }
+#nextBtn { right: -10px; }
+
+/* === Video personalizado === */
+.custom-player {
+  background-color: #fffaf0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.custom-player video {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+.controls button,
+.controls select,
+.controls input[type=range] {
+  font-size: 1em;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.controls button {
+  background-color: #ffb703;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.controls button:hover {
+  background-color: #fb8500;
+}
+
+#fullscreen {
+  background-color: #8ecae6;
+}
+
+#fullscreen:hover {
+  background-color: #219ebc;
+}
+
+/* === Footer === */
+footer {
+  background-color: #a5a58d;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .custom-player,
+  .carrusel-container {
+    width: 100%;
+  }
+}
