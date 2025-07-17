@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mi Proyecto</title>
-    <style>
-      body {font-family:cursive; background-color: antiquewhite;}
-  </style>
-    
-      This is a static template, there is no bundler or bundling involved! 
-    <H2>probando 01</H2>
-     alert<script src="/R1/ejercicio_nivel_1"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Viaje Soñado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Mi Viaje Soñado</h1>
+    <p>Explorando rutas, paisajes y días soleados</p>
+  </header>
+
+  <main>
+
+    <!-- Carrusel de Imágenes -->
+    <section class="galeria">
+      <h2>Galería del Recorrido</h2>
+      <div class="carrusel-container">
+        <button id="prevBtn">⟨</button>
+
+        <div class="carrusel">
+          <img src="https://via.placeholder.com/600x400?text=Paisaje+1" alt="Imagen 1">
+          <img src="https://via.placeholder.com/600x400?text=Paisaje+2" alt="Imagen 2">
+          <img src="https://via.placeholder.com/600x400?text=Paisaje+3" alt="Imagen 3">
+          <img src="https://via.placeholder.com/600x400?text=Paisaje+4" alt="Imagen 4">
+          <img src="https://via.placeholder.com/600x400?text=Paisaje+5" alt="Imagen 5">
+        </div>
+
+        <button id="nextBtn">⟩</button>
+      </div>
+    </section>
+
+    <!-- Video personalizado -->
+    <section class="videos">
+      <h2>Video Destacado del Viaje</h2>
+
+      <div class="custom-player">
+        <video id="video" src="video1.mp4"></video>
+
+        <div class="controls">
+          <button id="playPause">⏵</button>
+          <input type="range" id="progress" value="0" min="0" step="1">
+          <label>Velocidad:
+            <select id="speed">
+              <option value="0.5">0.5x</option>
+              <option value="1" selected>1x</option>
+              <option value="1.5">1.5x</option>
+              <option value="2">2x</option>
+            </select>
+          </label>
+          <label>Volumen:
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+          </label>
+          <button id="fullscreen">⛶</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Mi Viaje Soñado | Aventura & Naturaleza</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
